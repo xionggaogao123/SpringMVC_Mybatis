@@ -1,0 +1,21 @@
+ 
+- --创建表格
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `email` varchar(128) NOT NULL DEFAULT '',
+  `sex` varchar(2) NOT NULL DEFAULT '',
+  `did` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`uid`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+#
+# Data for table "users"
+#
+
+- --插入测试数据
+INSERT INTO `users` VALUES (1,'JspStudy','JspStudy3321',23,'245jhjn@qq.com','男',3),(2,'Jspadmin','JspStudy122',22,'543123@163.com','女',2),(3,'mysql测试qq','mysqltest',18,'xuitgoe@hotmail.com','女',1),(4,'JspStudy','JspStudy',24,'google@groogle.com','男',5),(5,'BaiAiqiyi','Aiyiqizzzxx',25,'baidu88@baidu.com','女',4),(6,'Tencents','tnnbbnvtxxx',26,'ooulghh@qq.com','男',6),(7,'GooglesA','6666xzccc',12,'youdao8@baidu.com','女',7),(8,'Baidu360','bauyyyttyyu',22,'tencent@groogle.com','男',8),(9,'Potplayer','pppooooooo',15,'wangyi@baidu.com','女',5),(10,'QQGoogle','qqwweqasju',13,'aliyun@groogle.com','男',6);
+
